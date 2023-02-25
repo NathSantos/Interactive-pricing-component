@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <!-- exibe o site corretamente com base no dispositivo do usuário -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Precificação interativo</title>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+
+    <div class="white-square">
+
+      <div class="opcao-preco-container">
+        <div class="opcao">
+          <span>100K PAGEVIEWS</span>
+        </div>
+  
+        <div class="preco">
+          <span id="valor">$16.00</span>
+        </div>
+
+        <div class="mes-ano-container">
+          <span id="periodo">/month</span>
+        </div>
+      </div>
+
+      <div class="slide-container">
+        <input type="range" min="0" max="4" id="myRange" value="2">
+      </div>
+
+      <div class="mes-ano">
+        <div class="mes">
+          <span>Monthly Billing</span>
+        </div>
+
+        <div class="botao-on-off">
+          <label class="switch">
+            <input type="checkbox" id="btn-checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="ano">
+          <span>Yearly Billing</span>
+        </div>
+
+        <div class="discount">
+          <span id="discount-value">25% discount</span>
+        </div>
+      </div>
+
+      <div class="infos">
+        <ul>
+          <li>Unlimited websites</li>
+          <li> 100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+
+        <div class="start-trial">
+          <button>Start my trial</button>
+        </div>
+      </div>
+
+    </div>
+
+    <img id="img-circles" src="./images/pattern-circles.svg" alt="círculos do plano de fundo">
+    <img id="img-background" src="./images/bg-pattern.svg" alt="parte de cima do plano de fundo">
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
